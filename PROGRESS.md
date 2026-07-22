@@ -6,6 +6,10 @@ Java backend engineer → AI engineer.
 
 ---
 
+## Day 4 - 2026-07-23 - List and Slicing
+
+## Day 3 - 2026-07-22 - Dynamic Typing
+
 ## Day 2 — 2026-07-16 · 250 XP · Streak 2
 *Learned:* Python has no classpath — sys.path is per-interpreter, so venvs
 isolate by giving each project its own interpreter. pip freeze is the lockfile;
