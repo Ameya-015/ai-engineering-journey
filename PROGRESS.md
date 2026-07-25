@@ -6,6 +6,15 @@ Java backend engineer → AI engineer.
 
 ---
 
+## Day 5 - 2026-07-24 - Tuples, unpacking, '//' vs '/'
+*Learned*: 'tuple' = immutable sequence(list) '(....)'. Index/slices works like a list, but
+can't mutate. slicing a tuple returns a tuple. There are three uses:
+multiple return values. ('return a, b' packs a tuple, 'x,y' = unpacks the value from function)
+Dict keys must be immutable and signalling "fixed group". Python '/' is ALWAYS float (17/5 = 3.4)
+Use '//' for integer floor division
+**Reflection** Unpacking multiple return values is cleaner than Java's wrapper classes.
+The '/' vs '//' thing will burn if not careful.
+
 ## Day 5 - 2026-07-24 - Dict and Set
 *Learned:* 'dict' = 'HashMap' with '{key, value} literals, bracket lookup.
 Missing Key -> 'KeyError' (loud) throws error when key is not present, vs Java's silent 'null', 'get()' opts looks into Java-style default ('None' or or a fallback(custom default value) you supply)
