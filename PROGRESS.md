@@ -6,6 +6,13 @@ Java backend engineer → AI engineer.
 
 ---
 
+## Day 5 - 2026-07-24 - Dict and Set
+*Learned:* 'dict' = 'HashMap' with '{key, value} literals, bracket lookup.
+Missing Key -> 'KeyError' (loud) throws error when key is not present, vs Java's silent 'null', 'get()' opts looks into Java-style default ('None' or or a fallback(custom default value) you supply)
+'set' = 'HashSet' with {'a', 'b'} literals, duplicates don't exist. 
+'{}' means an empty *dict*, empty set is denoted by 'setName()'. And as java returns null, Python returns None.
+*Reflection:* dict/set really are HashMap/HashSet 
+
 ## Day 4 - 2026-07-23 - List and Slicing
 
 ## Day 3 - 2026-07-22 - Dynamic Typing
