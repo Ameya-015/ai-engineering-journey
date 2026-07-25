@@ -6,7 +6,7 @@ Java backend engineer → AI engineer.
 
 ---
 
-## Day 5 - 2026-07-24 - Tuples, unpacking, '//' vs '/'
+## Day 6 - 2026-07-25 - Tuples, unpacking, '//' vs '/'
 *Learned*: 'tuple' = immutable sequence(list) '(....)'. Index/slices works like a list, but
 can't mutate. slicing a tuple returns a tuple. There are three uses:
 multiple return values. ('return a, b' packs a tuple, 'x,y' = unpacks the value from function)
