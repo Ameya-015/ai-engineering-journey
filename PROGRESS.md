@@ -6,6 +6,10 @@ Java backend engineer → AI engineer.
 
 ---
 
+## Day 11 - 2026-07-30 - Classes
+*Learned*: Class declaration, __init__ is the constructor. 'self' should be the first parameter of every method. Eg: self.varName = something, varName need not be declared before hand, the varName will come into existence as soon as self.varName line executes
+
+
 ## Day 10 - 2026-07-29 - Dictionary/Set Comprehension and f-strings
 *Learned*: Comprehension brackets as per container. list - [v ...], dict - {k:v ...}, set{v ...}
 f-strings: f".... {expr}.." anything inside the curly braces gets evaluated and converted to a string, auto converts type. {val:.2f} / {val:.1%} for formatting
