@@ -6,6 +6,16 @@ Java backend engineer → AI engineer.
 
 ---
 
+## Day 8 - 2026-07-27 - Functions
+*Learned*: Function and their declaration. No 'void', function without 'return' will returns 'None' silently. Default arguments in method declaration. '**' means exponentiation. '//' is floor division and '%' is remainder. Multiple return values of method are unpacked at their calling site.
+
+
+## Day 7 - 2026-07-26 - Control flow
+*Learned*: 'if/elif/else' with colon and indent syntax. 'and' 'or' 'not' = '&&', '||', '!'
+for loop is by default for each, python iterates on elements and not index. enumerate returns index and value as an unpackable pair. range(N) iterates the loop over 'N' times, end exclusive. while is same as java  
+**Reflection** We are iterating over values and not indices. 
+
+
 ## Day 6 - 2026-07-25 - Tuples, unpacking, '//' vs '/'
 *Learned*: 'tuple' = immutable sequence(list) '(....)'. Index/slices works like a list, but
 can't mutate. slicing a tuple returns a tuple. There are three uses:
