@@ -6,7 +6,12 @@ Java backend engineer → AI engineer.
 
 ---
 
-## Day 9 - 2026-07-27 - List Comprehension
+## Day 10 - 2026-07-29 - Dictionary/Set Comprehension and f-strings
+*Learned*: Comprehension brackets as per container. list - [v ...], dict - {k:v ...}, set{v ...}
+f-strings: f".... {expr}.." anything inside the curly braces gets evaluated and converted to a string, auto converts type. {val:.2f} / {val:.1%} for formatting
+
+
+## Day 9 - 2026-07-28 - List Comprehension
 *Learned*: List comprehension: '[expr for var in source if condition]'. Java's map, filter and collect has been folded into simple bracket syntax. It's an expression that evaluates to a whole list. While writing we have transformation first but execution sequence follows the flow: condition -> transform. append() grows a list
 
 ## Day 8 - 2026-07-27 - Functions
