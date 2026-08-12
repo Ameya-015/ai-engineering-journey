@@ -6,6 +6,9 @@ Java backend engineer → AI engineer.
 
 ---
 
+## Day 9 - 2026-07-27 - List Comprehension
+*Learned*: List comprehension: '[expr for var in source if condition]'. Java's map, filter and collect has been folded into simple bracket syntax. It's an expression that evaluates to a whole list. While writing we have transformation first but execution sequence follows the flow: condition -> transform. append() grows a list
+
 ## Day 8 - 2026-07-27 - Functions
 *Learned*: Function and their declaration. No 'void', function without 'return' will returns 'None' silently. Default arguments in method declaration. '**' means exponentiation. '//' is floor division and '%' is remainder. Multiple return values of method are unpacked at their calling site.
 
