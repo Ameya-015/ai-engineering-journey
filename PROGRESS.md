@@ -6,6 +6,14 @@ Java backend engineer → AI engineer.
 
 ---
 
+## Day 12 — 2026-08-11 · 250 XP
+**Learned:** Inheritance — `class Child(Parent):` = extends, overrides automatic
+(no @Override), `super().__init__(...)` = Java's `super(...)` for constructor
+chaining. Methods return values like functions. Key catch: methods must READ
+`self.field`, not hardcode literals — that's what makes one method describe any
+instance (polymorphism). Child inherits parent's `__init__` if it defines none.
+
+
 ## Day 11 - 2026-07-30 - Classes
 *Learned*: Class declaration, __init__ is the constructor. 'self' should be the first parameter of every method. Eg: self.varName = something, varName need not be declared before hand, the varName will come into existence as soon as self.varName line executes
 
