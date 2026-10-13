@@ -6,6 +6,13 @@ Java backend engineer → AI engineer.
 
 ---
 
+## Day 14 — 2026-08-13 · 250 XP
+**Learned:** Exceptions — `try:` / `except ErrorType:` = try/catch. `except` catches
+the type you name, lets others propagate. `as e` binds the error object; `finally`
+always runs; `raise` = throw. Key distinction: `raise` = I
+produce the error signal; `except` = I react to one. This exercise was pure react.
+
+
 ## Day 13 — 2026-08-11 · 250 XP
 **Learned:** Dunder methods — Python calls specially-named methods when things
 happen to your object. `__str__` = `toString()` (must RETURN a string, never
