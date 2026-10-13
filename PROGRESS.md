@@ -6,6 +6,15 @@ Java backend engineer → AI engineer.
 
 ---
 
+## Day 15 — 2026-08-13 · 250 XP
+**Learned:** Module system — every `.py` file is a module named by its filename.
+Three import forms: `import mod` (use `mod.name`), `from mod import name` (use bare),
+`from mod import a, b`. No class requirement — import functions/vars/classes directly.
+`__name__` is `"__main__"` when run directly, the module name when imported — so
+`if __name__ == "__main__":` holds run-directly test code. Scope catch: a function's
+parameters don't exist outside it.
+
+
 ## Day 14 — 2026-08-13 · 250 XP
 **Learned:** Exceptions — `try:` / `except ErrorType:` = try/catch. `except` catches
 the type you name, lets others propagate. `as e` binds the error object; `finally`
