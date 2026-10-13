@@ -6,6 +6,14 @@ Java backend engineer → AI engineer.
 
 ---
 
+## Day 13 — 2026-08-11 · 250 XP
+**Learned:** Dunder methods — Python calls specially-named methods when things
+happen to your object. `__str__` = `toString()` (must RETURN a string, never
+print). `__eq__(self, other)` = `equals()`, wired to the `==` operator; default
+`==` compares identity like Java, override to compare contents. Dunders = operator
+overloading, which Java lacks (`__add__` → `+`, etc.). `__init__` was my first one.
+
+
 ## Day 12 — 2026-08-11 · 250 XP
 **Learned:** Inheritance — `class Child(Parent):` = extends, overrides automatic
 (no @Override), `super().__init__(...)` = Java's `super(...)` for constructor
