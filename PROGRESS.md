@@ -6,6 +6,24 @@ Java backend engineer → AI engineer.
 
 ---
 
+## Day 17 — 2026-10-15 · 225 XP
+**Learned:** First INTEGRATED build — classes + file I/O + exceptions in one
+program (a note-saver). Key wins: `str(self)` to reuse `__str__` inside another
+method (composition); append mode `"a"` vs read `"r"`; catching the error type
+that actually fires (`FileNotFoundError`, not a reflexive ValueError); `load_notes`
+as a free function (no self). Caught the self-on-free-function trap this time.
+Bug fixed early: `length = ...` (local, dies) vs `self.length = ...` (persists).
+
+
+## Day 16 — 2026-08-13 · 250 XP
+**Learned:** File I/O — `open(path, mode)`, modes `"w"` (overwrite), `"r"` (read,
+default), `"a"` (append). `with open(...) as f:` = try-with-resources — guaranteed
+close, no `f.close()` needed. `write` does NOT add `\n` (unlike print) — add it
+yourself. Lines READ from a file carry their trailing `\n`, so `.strip()` before
+printing/comparing or comparisons silently fail. `for line in f:` iterates a file
+line by line (memory-efficient).
+
+
 ## Day 15 — 2026-08-13 · 250 XP
 **Learned:** Module system — every `.py` file is a module named by its filename.
 Three import forms: `import mod` (use `mod.name`), `from mod import name` (use bare),
