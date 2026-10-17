@@ -2,9 +2,17 @@
 
 Java backend engineer → AI engineer.
 
-*Current:* Day 2 · 400 XP · Streak 2 🔥 · Rank: Syntax Initiate
-
 ---
+
+## Day 20 — 2026-10-17 · 250 XP
+**Learned:** String methods — `.split(sep)`/`.join()` (inverses; join's separator
+owns the method), `.strip()`, `.lower()`/`.upper()`, `.replace()`, `.startswith()`/
+`.endswith()`, `in`. Key rule: strings are IMMUTABLE — every method returns a NEW
+string, original untouched; capture with `s = s.method()` or lose it. Built a text
+cleaner: `.split(",")` + comprehension chaining `.strip().lower()` per piece — the
+pure-Python version of a pandas data-cleaning op.
+**Reflection:** Immutability trap (expecting s to change) is the one to watch.
+Method-chaining inside a comprehension came out clean first try.
 
 ## Day 19 — 2026-10-17 · 200 XP
 **Learned:** Dict iteration — loop keys (default), `.values()`, `.items()` (gives
