@@ -6,6 +6,17 @@ Java backend engineer → AI engineer.
 
 ---
 
+## Day 19 — 2026-10-17 · 200 XP
+**Learned:** Dict iteration — loop keys (default), `.values()`, `.items()` (gives
+(k,v) tuples to unpack = Java entrySet but lighter). `.split()` breaks a string
+into a word list. Biggest build yet (WordCounter): `.get(word,0)+1` replaces an
+if/else for new-vs-seen words; method calling method (`self.add_word`); file load
++ FileNotFoundError. Bug (twice, same kind): forgot `return` — silent None from
+Day 8, surfaced far from its cause (c.report() quietly didn't run). Lesson: every
+value-producing path must actually return.
+**Reflection:** Five concepts woven, architecture right both passes. Only misses
+were missing returns — the quiet failure mode, now felt in a real program.
+
 ## Day 18 — 2026-10-17 · 175 XP
 **Learned:** A class that OWNS a collection — `self.expenses = [] \\initializing an empty list` as a field,
 `add`/`total`/`show_all` operating across it. New shape: object manages state +
