@@ -6,6 +6,15 @@ Java backend engineer → AI engineer.
 
 ---
 
+## Day 18 — 2026-10-17 · 175 XP
+**Learned:** A class that OWNS a collection — `self.expenses = [] \\initializing an empty list` as a field,
+`add`/`total`/`show_all` operating across it. New shape: object manages state +
+offers operations (the backbone of real programs). Built from a full spec in one
+go (less scaffolding). Bug: called a method as a free function `total(self)` —
+methods are reached THROUGH the object: `self.total()`. Mirror of Day 17's
+free-function-no-self. Also: Python uses snake_case (`show_all`) not camelCase.
+
+
 ## Day 17 — 2026-10-15 · 225 XP
 **Learned:** First INTEGRATED build — classes + file I/O + exceptions in one
 program (a note-saver). Key wins: `str(self)` to reuse `__str__` inside another
