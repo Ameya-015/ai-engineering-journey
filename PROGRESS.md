@@ -4,6 +4,16 @@ Java backend engineer → AI engineer.
 
 ---
 
+## Day 21 — 2026-10-18 · 250 XP
+**Learned:** pytest — first genuinely new skill. Test = plain function, named
+`test_*` in a `test_*.py` file (naming IS registration, no @Test/class). Use
+built-in `assert expr` (no assertEquals). Run with bare `pytest` — auto-discovers
+all tests. Dots = passes; failures show actual-vs-expected diff automatically.
+`with pytest.raises(ErrorType):` tests that code raises the right error (here the
+error is SUCCESS, inverted from normal code). This is the boss's "tested" requirement.
+**Reflection:** Far less ceremony than JUnit. The raises-block inversion (error =
+pass) is the one mental flip.
+
 ## Day 20 — 2026-10-17 · 250 XP
 **Learned:** String methods — `.split(sep)`/`.join()` (inverses; join's separator
 owns the method), `.strip()`, `.lower()`/`.upper()`, `.replace()`, `.startswith()`/
