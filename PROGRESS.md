@@ -4,6 +4,11 @@ Java backend engineer → AI engineer.
 
 ---
 
+## 🏆 PHASE 1 BOSS CLEARED — 2026-10-19
+Built a CLI Task Manager from scratch, no scaffolding: Task + TaskManager classes,
+file persistence (round-trips across runs tasks persists and loads back in the form of tasks), IndexError + ValueError handling, 5 passing pytest tests (incl. save/load round-trip), interactive CLI loop. Debugged 7 issues from first draft unaided. Derive-don't-store applied twice. Bonus: handled non-numeric input without being asked.
+
+
 ## Day 21 — 2026-10-18 · 250 XP
 **Learned:** pytest — first genuinely new skill. Test = plain function, named
 `test_*` in a `test_*.py` file (naming IS registration, no @Test/class). Use
