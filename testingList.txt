@@ -1,3 +1,2 @@
 1|Buy milk
-0|Buy cocoa powder
-1|Buy chocolate
+0|Buy tea
