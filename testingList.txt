@@ -1,2 +1,0 @@
-1|Buy milk
-0|Buy tea
