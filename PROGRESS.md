@@ -4,6 +4,17 @@ Java backend engineer → AI engineer.
 
 ---
 
+## Day 23 — 2026-10-20 · 250 XP
+**Learned:** Phase 2 begins — NumPy. `import numpy as np` (universal alias).
+`ndarray` = Java's `double[]`: one type, packed in memory, math runs in C.
+Same operator, different meaning by type: list `+`/`*` = concatenate/repeat;
+array `+`/`*` = element-wise math (NumPy overloads `__add__`/`__mul__`).
+Print tells: commas = list, spaces = array; trailing dot (`10.`) = float.
+`/` always floats; `//` keeps ints. Aggregations squash to one value:
+`.sum()`, `.mean()` (float), `.max()`, `.min()`, `.argmax()`/`.argmin()`
+(the INDEX, not the value). Vectorization: element-wise op + aggregation,
+no loops. `x - x.mean()` = centering (value minus mean, sign matters).
+
 ## 🏆 PHASE 1 BOSS CLEARED — 2026-10-19
 Built a CLI Task Manager from scratch, no scaffolding: Task + TaskManager classes,
 file persistence (round-trips across runs tasks persists and loads back in the form of tasks), IndexError + ValueError handling, 5 passing pytest tests (incl. save/load round-trip), interactive CLI loop. Debugged 7 issues from first draft unaided. Derive-don't-store applied twice. Bonus: handled non-numeric input without being asked.
