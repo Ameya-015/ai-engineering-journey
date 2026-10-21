@@ -4,6 +4,16 @@ Java backend engineer → AI engineer.
 
 ---
 
+## Day 24 — 2026-10-21 · 250 XP
+**Learned:** 2D arrays — built from a list of lists, one inner list per row.
+Unlike Java's jagged `int[][]`, a NumPy grid is one rectangular memory block.
+`.shape` = (rows, cols) tuple; `.ndim` = dimensions (= leading brackets);
+`.size` = total elements. `(3,)` is 1D (comma makes the tuple); `(1, 3)` is a
+row vector; `(3, 1)` is a column vector. Indexing: `m[row, col]` — left of
+comma = rows, right = columns. `m[:, 1]` = a whole column (no loop). Slices are
+end-exclusive (count = end − start). Integer index DROPS a dimension
+(`m[0]` → shape (3,)); a slice KEEPS it (`m[:1]` → shape (1, 3)).
+
 ## Day 23 — 2026-10-20 · 250 XP
 **Learned:** Phase 2 begins — NumPy. `import numpy as np` (universal alias).
 `ndarray` = Java's `double[]`: one type, packed in memory, math runs in C.
