@@ -3,6 +3,14 @@
 Java backend engineer → AI engineer.
 
 ---
+## Day 25 — 2026-10-23 · 250 XP
+**Learned:** Boolean masking. Comparisons are element-wise: `arr > 80` →
+a boolean array, same shape. `arr[mask]` keeps elements where the mask is
+True → a new, shorter 1D array (= Java stream `.filter()`, no loop).
+Combine conditions with `&` / `|` / `~` — NOT `and`/`or`/`not` (those raise
+ValueError on arrays). Each condition needs its own `()` because `&` binds
+tighter than `>`. True = 1, so `mask.sum()` COUNTS matches; `arr[mask].sum()`
+TOTALS the values — different questions. No match → empty array `[]`.
 
 ## Day 24 — 2026-10-21 · 250 XP
 **Learned:** 2D arrays — built from a list of lists, one inner list per row.
