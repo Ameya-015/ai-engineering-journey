@@ -3,6 +3,16 @@
 Java backend engineer → AI engineer.
 
 ---
+## Day 26 — 2026-10-23 · 250 XP
+**Learned:** Axis-wise aggregations. `axis` = the dimension that gets
+COLLAPSED (its position in the shape tuple). Shape (4, 3): `axis=0` squashes
+rows → one result per column, shape (3,); `axis=1` squashes columns → one per
+row, shape (4,); no axis → one number. Cross-out trick: remove the axis from
+the shape to get the result's shape. Works for sum/mean/max/min/argmax.
+Masking 2D → flat 1D result. Mask + axis = counts per row/column:
+`(m > 5).sum(axis=1)`. Whatever is left of `.sum()` gets summed — a mask
+gives COUNTS, values give TOTALS. `max` = value, `argmax` = index.
+
 ## Day 25 — 2026-10-23 · 250 XP
 **Learned:** Boolean masking. Comparisons are element-wise: `arr > 80` →
 a boolean array, same shape. `arr[mask]` keeps elements where the mask is
