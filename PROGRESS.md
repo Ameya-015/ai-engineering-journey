@@ -3,6 +3,17 @@
 Java backend engineer → AI engineer.
 
 ---
+## Day 28 — 2026-10-25 · 250 XP
+**Learned:** Array creation & reshape. `np.arange(start, stop, step)` = range()
+returning an array (= `for (i = start; i < stop; i += step)`, end-exclusive;
+one arg → starts at 0). `np.zeros` / `np.ones` → FLOATS by default; 2D shape
+is a tuple → double parens `np.zeros((2, 3))`. `.reshape(r, c)` rearranges
+the same data, filling row by row; element count must match (check `.size`
+first, else ValueError). `-1` = infer that dimension (must divide evenly);
+`.reshape(-1, 1)` → column vector, common in ML. Returns a NEW array —
+capture it. (2, 2, 3) = 3D: 2 blocks of 2×3 grids.
+
+
 ## Day 27 — 2026-10-25 · 250 XP
 **Learned:** Broadcasting — NumPy stretches arrays of different shapes to fit
 (no actual copy). Rule: line shapes up from the RIGHT; each pair must be equal
