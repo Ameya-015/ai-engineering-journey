@@ -3,6 +3,16 @@
 Java backend engineer → AI engineer.
 
 ---
+## Day 27 — 2026-10-25 · 250 XP
+**Learned:** Broadcasting — NumPy stretches arrays of different shapes to fit
+(no actual copy). Rule: line shapes up from the RIGHT; each pair must be equal
+or one must be 1; a missing position counts as 1. (2,3) + (3,) works — the row
+is reused for every row. (2,3) + (2,) fails — 3 vs 2, even though there are 2
+rows. A column vector (n,1) stretches across columns → one value per row.
+`keepdims=True` keeps the collapsed axis as size 1: `sum(axis=1, keepdims=True)`
+→ (4,1), which is what makes per-row division broadcast. Used it for
+per-feature centering `x - x.mean(axis=0)` and row-normalizing `x / x.sum(...)`.
+
 ## Day 26 — 2026-10-23 · 250 XP
 **Learned:** Axis-wise aggregations. `axis` = the dimension that gets
 COLLAPSED (its position in the shape tuple). Shape (4, 3): `axis=0` squashes
