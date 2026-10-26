@@ -3,6 +3,17 @@
 Java backend engineer → AI engineer.
 
 ---
+## Day 29 — 2026-10-26 · 300 XP (incl. bonus)
+**Built:** NumPy consolidation — a study-app usage report. Flat data →
+`reshape(4, -1)`; seven pure functions (take array, return result, no
+printing, no loops) using axis aggregations, masks, broadcasting + keepdims;
+composed (`weekly_share` reuses `user_totals`). Plus 2 pytest tests.
+**Learned:** Parameter SHADOWING — a param with the same name as a module
+variable hides it; give them different names (`usage` vs `usage_minutes`).
+A DEFAULT lives in the definition (`def f(x, threshold=30)`); a KEYWORD
+ARGUMENT at the call site (`f(x, threshold=30)`) only names it. `argmax` with
+no axis on a (4,1) column returns a flattened index — sum to 1D first.
+
 ## Day 28 — 2026-10-25 · 250 XP
 **Learned:** Array creation & reshape. `np.arange(start, stop, step)` = range()
 returning an array (= `for (i = start; i < stop; i += step)`, end-exclusive;
