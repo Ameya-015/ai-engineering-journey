@@ -3,6 +3,16 @@
 Java backend engineer → AI engineer.
 
 ---
+## Day 30 — 2026-10-27 · 250 XP
+**Learned:** pandas begins (`import pandas as pd`). A Series = a 1D NumPy
+array + labels (the index) — like an ordered `LinkedHashMap` with vectorized
+math. `pd.Series(values, index=[...])`; no index → 0, 1, 2… Prints labels
+down the left + a `dtype` line (that's how you tell it from a bare array).
+NumPy ops, masks and aggregations all work and keep the labels. `.loc[label]`
+= by label (`map.get`), `.iloc[i]` = by position, zero-based (`list.get`).
+Position slices are end-EXCLUSIVE; label slices are end-INCLUSIVE. Integer →
+plain value; slice → a Series (keeps the dimension). Missing label → KeyError.
+
 ## Day 29 — 2026-10-26 · 300 XP (incl. bonus)
 **Built:** NumPy consolidation — a study-app usage report. Flat data →
 `reshape(4, -1)`; seven pure functions (take array, return result, no
