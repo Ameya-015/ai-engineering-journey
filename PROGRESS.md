@@ -3,6 +3,16 @@
 Java backend engineer → AI engineer.
 
 ---
+## Day 31 — 2026-10-29 · 250 XP
+**Learned:** pandas DataFrame — a 2D table with labeled rows (index) AND
+columns; each column is a Series, columns can differ in type. Build from a
+dict of lists (key = column name). `.shape` (rows, cols), `.columns`,
+`.dtypes`, `.head(n)`. Text columns are `str` in pandas 3 (`object` in older
+versions/tutorials). Select: `df["col"]` → Series; `df[["a", "b"]]` →
+DataFrame (a LIST of names; one name in a list still gives a DataFrame).
+Rows/cells: `.loc[row_label, "col"]` (label, slice inclusive) and
+`.iloc[row_pos, col_pos]` (positions, zero-based, exclusive). Row first, always.
+
 ## Day 30 — 2026-10-27 · 250 XP
 **Learned:** pandas begins (`import pandas as pd`). A Series = a 1D NumPy
 array + labels (the index) — like an ordered `LinkedHashMap` with vectorized
