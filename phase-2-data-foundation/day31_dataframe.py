@@ -14,7 +14,7 @@ if __name__ == "__main__":
     # The plant and days_since_watered columns, as a DataFrame.
     print(plants[["plant", "days_since_watered"]])
     # Basil’s height, using .loc (with its row label and column name).
-    print(plants.loc[2, "height_cm"])
+    print(plants.loc[2, "height_c   m"])
     # The same value, using .iloc (positions).
     print(plants.iloc[2,1])
     # The plant names for rows 1 through 3 inclusive, using a label slice.

@@ -3,6 +3,16 @@
 Java backend engineer → AI engineer.
 
 ---
+## Day 32 — 2026-11-01 · 250 XP
+**Learned:** Filtering rows: a comparison on a column → boolean Series;
+`df[mask]` keeps matching rows, all columns, ORIGINAL row labels (not
+renumbered). Combine with `&` / `|` / `~` and `()` around comparisons. `|`
+keeps each row at most once — filters never duplicate. `df.loc[mask, "col"]`
+= filter rows + pick a column. New columns: `df["new"] = <vectorized expr>`
+(like SQL `SELECT *, a - b AS new`); combine columns row by row; boolean
+columns work as flags (`~df["flag"]`). Assignment MODIFIES the DataFrame in
+place; reusing a name overwrites the column. The index isn't a column.
+
 ## Day 31 — 2026-10-29 · 250 XP
 **Learned:** pandas DataFrame — a 2D table with labeled rows (index) AND
 columns; each column is a Series, columns can differ in type. Build from a
