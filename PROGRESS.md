@@ -3,6 +3,20 @@
 Java backend engineer → AI engineer.
 
 ---
+## Day 33 — 2026-11-01 · 250 XP
+**Learned:** Sorting: `df.sort_values("col")` (ascending default;
+`ascending=False` for descending); several columns = a list + matching
+directions, e.g. `sort_values(["a", "b"], ascending=[True, False])`. Row
+labels travel with their rows. Returns a NEW DataFrame (unlike column
+assignment). Top-N = `sort_values(...).head(n)`. Ties: default sort isn't
+guaranteed stable — use `kind="stable"` or a tie-breaker column.
+Counting: `df["col"].value_counts()` → Series of category → count, most
+frequent first; `.index[0]` = most common category, `.iloc[0]` = its count;
+`normalize=True` → fractions summing to 1; `.sort_index()` orders by label.
+String labels sort ALPHABETICALLY (Fri, Mon, Sat…), not by meaning.
+**Reflection:** DataFrame-level `value_counts()` counts whole-row combinations — always call
+it on a column.
+
 ## Day 32 — 2026-11-01 · 250 XP
 **Learned:** Filtering rows: a comparison on a column → boolean Series;
 `df[mask]` keeps matching rows, all columns, ORIGINAL row labels (not
