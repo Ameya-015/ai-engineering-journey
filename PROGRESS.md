@@ -3,6 +3,17 @@
 Java backend engineer → AI engineer.
 
 ---
+## Day 34 — 2026-11-02 · 250 XP
+**Learned:** `lambda params: expr` = Java's `x -> expr`, but ONE expression
+only, returned implicitly (no statements/blocks). Conditional expression:
+`a if cond else b` (= `cond ? a : b`, true value first; chains:
+`"A" if s >= 85 else "B" if s >= 60 else "C"`). `sorted(xs, key=f,
+reverse=True)` returns a new list; `key` decides the ORDER only — the result
+holds the original elements (= `Comparator.comparing`). Pass functions
+without `()` (`key=len`). Python's sort is stable. `series.apply(f)` calls f
+per value → new Series (= `stream().map`); named `def` for multi-line logic.
+Prefer vectorized column math when possible — `.apply` is a per-row Python loop.
+
 ## Day 33 — 2026-11-01 · 250 XP
 **Learned:** Sorting: `df.sort_values("col")` (ascending default;
 `ascending=False` for descending); several columns = a list + matching
