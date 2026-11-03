@@ -3,6 +3,16 @@
 Java backend engineer → AI engineer.
 
 ---
+## Day 35 — 2026-11-03 · 250 XP
+**Learned:** `*args` collects extra positional args into a TUPLE (= Java
+varargs `int... nums`; empty call → `()`, never null). `**kwargs` collects
+extra keyword args into a DICT (no Java equivalent). Named parameters claim
+their arguments first; `*args`/`**kwargs` get only the leftovers, and a
+claimed argument appears in exactly one place. Order: normal, `*args`,
+keyword-only, `**kwargs`. At a CALL, `*list` / `**dict` spread instead of
+collect. Built `make_tag(tag, text, **attrs)` with a comprehension over
+`.items()` + `" ".join(...)`.
+
 ## Day 34 — 2026-11-02 · 250 XP
 **Learned:** `lambda params: expr` = Java's `x -> expr`, but ONE expression
 only, returned implicitly (no statements/blocks). Conditional expression:
