@@ -3,6 +3,16 @@
 Java backend engineer → AI engineer.
 
 ---
+## Day 37 — 2026-11-06 · 250 XP
+**Learned:** `pd.read_csv(path)` → DataFrame (header row = column names,
+types inferred). Paths are relative to the notebook's folder; data lives in
+`data/`. Dates stay TEXT unless `parse_dates=["date"]`. Missing cells → `NaN`
+("Not a Number", a float). First look at any new data: `.head()`, `.shape`,
+`.info()` (non-null counts reveal gaps), `.describe()` (stats for numeric and
+date columns, skips text). NaN propagates through math (`75 / NaN` → NaN),
+and one NaN turns an int column into float64.
+
+
 ## Day 36 — 2026-11-06 · 250 XP
 **Learned:** Jupyter notebooks (`.ipynb`) in VS Code — Jupyter extension +
 `ipykernel` in the venv; Select Kernel → `.venv`. A notebook = cells run one
