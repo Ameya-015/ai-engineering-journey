@@ -3,6 +3,17 @@
 Java backend engineer → AI engineer.
 
 ---
+## Day 36 — 2026-11-06 · 250 XP
+**Learned:** Jupyter notebooks (`.ipynb`) in VS Code — Jupyter extension +
+`ipykernel` in the venv; Select Kernel → `.venv`. A notebook = cells run one
+at a time (Shift+Enter); variables persist in the kernel's memory between
+cells (like jshell, saved as a document). The last expression in a cell
+displays itself; DataFrames render as tables. Code cells vs Markdown cells
+(notes, findings). The trap: RUN ORDER is what counts — re-running a cell
+changes state invisibly (`[n]` shows run order). Rule: Restart → Run All
+before sharing or committing; numbers must run [1], [2], [3] in order.
+**Reflection:** Markdown notes should record findings about the data, not about the tool.
+
 ## Day 35 — 2026-11-03 · 250 XP
 **Learned:** `*args` collects extra positional args into a TUPLE (= Java
 varargs `int... nums`; empty call → `()`, never null). `**kwargs` collects
