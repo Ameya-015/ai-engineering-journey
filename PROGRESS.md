@@ -3,6 +3,19 @@
 Java backend engineer → AI engineer.
 
 ---
+## Day 38 — 2026-11-08 · 250 XP
+**Learned:** Missing values. `NaN == NaN` is False, so `== np.nan` never
+finds anything — use `.isna()` / `.notna()`. `df.isna().sum()` = missing per
+column; `df[df.isna().any(axis=1)]` = rows with any gap. `.count()` counts
+PRESENT values (present + missing = len). Aggregations skip NaN.
+`dropna()` (optionally `subset=[...]`) removes rows; `fillna(value)` or
+`fillna({"col": value})` replaces gaps. Both return NEW objects. The choice
+changes results: on my reading log, filling with means raised mean
+pages/min from 0.745 to 0.855, because the invented rows gave the two
+highest speeds. Fill with a flag column to keep the trace.
+**Reflection:** Compared two different metrics (pages vs pages/min) and
+divided one table's column by another's. 
+
 ## Day 37 — 2026-11-06 · 250 XP
 **Learned:** `pd.read_csv(path)` → DataFrame (header row = column names,
 types inferred). Paths are relative to the notebook's folder; data lives in
