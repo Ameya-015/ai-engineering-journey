@@ -3,6 +3,17 @@
 Java backend engineer → AI engineer.
 
 ---
+## Day 39 — 2026-11-09 · 250 XP
+**Learned:** dtypes: int64, float64, bool, str, datetime64. Numbers stored as
+TEXT give silent wrong answers (sort '10' < '9', max '9', + concatenates).
+`.astype(int/float/str)` converts → new Series; raises on bad values; float →
+int truncates. NaN can't be `int64` → use `"Int64"` (capital I = nullable,
+like Java `Integer` vs `int`; missing shows as `<NA>`).
+`pd.to_numeric(col, errors="coerce")` turns junk ("unknown") into NaN.
+`read_csv(..., dtype={"id": str})` stops IDs losing leading zeros (007 → 7).
+Booleans from text: `df["paid"] = df["paid"] == "yes"`. read_csv already
+treats "n/a" as missing. Sums over gaps undercount (680 = complete orders only).
+
 ## Day 38 — 2026-11-08 · 250 XP
 **Learned:** Missing values. `NaN == NaN` is False, so `== np.nan` never
 finds anything — use `.isna()` / `.notna()`. `df.isna().sum()` = missing per

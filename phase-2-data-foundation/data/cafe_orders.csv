@@ -1,0 +1,6 @@
+order_id,item,quantity,price,paid
+007,Coffee,2,120,yes
+012,Tea,1,80,no
+045,Sandwich,n/a,150,yes
+101,Coffee,3,120,yes
+120,Muffin,2,unknown,yes
